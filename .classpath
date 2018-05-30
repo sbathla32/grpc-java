@@ -3,8 +3,6 @@
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="src" path="build/generated/source/proto/main/java"/>
 	<classpathentry kind="src" path="build/generated/source/proto/main/grpc"/>
-	<classpathentry kind="src" path="src/main/resources"/>
-	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
 	<classpathentry kind="lib" path="C:/Users/Sahil/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-alts/1.12.0/6e34fcfb21675dcd09ac431995ecab727c724c68/grpc-alts-1.12.0.jar" sourcepath="C:/Users/Sahil/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-alts/1.12.0/965e82a3d96c483d17e241631b7e2823a641c529/grpc-alts-1.12.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Sahil/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-protobuf/1.12.0/fbee015b681b5342e72fe40f88eae9dd6cbce206/grpc-protobuf-1.12.0.jar" sourcepath="C:/Users/Sahil/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-protobuf/1.12.0/178d5e6b2e29b11251265f4ca629d58b3432625c/grpc-protobuf-1.12.0-sources.jar"/>

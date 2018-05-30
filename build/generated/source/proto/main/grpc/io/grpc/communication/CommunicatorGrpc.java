@@ -1,4 +1,4 @@
-package io.grpc.communication.example;
+package io.grpc.communication;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -32,34 +32,34 @@ public final class CommunicatorGrpc {
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   @java.lang.Deprecated // Use {@link #getSendMessageMethod()} instead. 
-  public static final io.grpc.MethodDescriptor<io.grpc.communication.example.DigitalRequest,
-      io.grpc.communication.example.DigitalReply> METHOD_SEND_MESSAGE = getSendMessageMethodHelper();
+  public static final io.grpc.MethodDescriptor<io.grpc.communication.DigitalRequest,
+      io.grpc.communication.DigitalReply> METHOD_SEND_MESSAGE = getSendMessageMethodHelper();
 
-  private static volatile io.grpc.MethodDescriptor<io.grpc.communication.example.DigitalRequest,
-      io.grpc.communication.example.DigitalReply> getSendMessageMethod;
+  private static volatile io.grpc.MethodDescriptor<io.grpc.communication.DigitalRequest,
+      io.grpc.communication.DigitalReply> getSendMessageMethod;
 
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static io.grpc.MethodDescriptor<io.grpc.communication.example.DigitalRequest,
-      io.grpc.communication.example.DigitalReply> getSendMessageMethod() {
+  public static io.grpc.MethodDescriptor<io.grpc.communication.DigitalRequest,
+      io.grpc.communication.DigitalReply> getSendMessageMethod() {
     return getSendMessageMethodHelper();
   }
 
-  private static io.grpc.MethodDescriptor<io.grpc.communication.example.DigitalRequest,
-      io.grpc.communication.example.DigitalReply> getSendMessageMethodHelper() {
-    io.grpc.MethodDescriptor<io.grpc.communication.example.DigitalRequest, io.grpc.communication.example.DigitalReply> getSendMessageMethod;
+  private static io.grpc.MethodDescriptor<io.grpc.communication.DigitalRequest,
+      io.grpc.communication.DigitalReply> getSendMessageMethodHelper() {
+    io.grpc.MethodDescriptor<io.grpc.communication.DigitalRequest, io.grpc.communication.DigitalReply> getSendMessageMethod;
     if ((getSendMessageMethod = CommunicatorGrpc.getSendMessageMethod) == null) {
       synchronized (CommunicatorGrpc.class) {
         if ((getSendMessageMethod = CommunicatorGrpc.getSendMessageMethod) == null) {
           CommunicatorGrpc.getSendMessageMethod = getSendMessageMethod = 
-              io.grpc.MethodDescriptor.<io.grpc.communication.example.DigitalRequest, io.grpc.communication.example.DigitalReply>newBuilder()
+              io.grpc.MethodDescriptor.<io.grpc.communication.DigitalRequest, io.grpc.communication.DigitalReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "communication.Communicator", "SendMessage"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  io.grpc.communication.example.DigitalRequest.getDefaultInstance()))
+                  io.grpc.communication.DigitalRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  io.grpc.communication.example.DigitalReply.getDefaultInstance()))
+                  io.grpc.communication.DigitalReply.getDefaultInstance()))
                   .setSchemaDescriptor(new CommunicatorMethodDescriptorSupplier("SendMessage"))
                   .build();
           }
@@ -69,34 +69,34 @@ public final class CommunicatorGrpc {
   }
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   @java.lang.Deprecated // Use {@link #getSendMessageAgainMethod()} instead. 
-  public static final io.grpc.MethodDescriptor<io.grpc.communication.example.DigitalRequest,
-      io.grpc.communication.example.DigitalReply> METHOD_SEND_MESSAGE_AGAIN = getSendMessageAgainMethodHelper();
+  public static final io.grpc.MethodDescriptor<io.grpc.communication.DigitalRequest,
+      io.grpc.communication.DigitalReply> METHOD_SEND_MESSAGE_AGAIN = getSendMessageAgainMethodHelper();
 
-  private static volatile io.grpc.MethodDescriptor<io.grpc.communication.example.DigitalRequest,
-      io.grpc.communication.example.DigitalReply> getSendMessageAgainMethod;
+  private static volatile io.grpc.MethodDescriptor<io.grpc.communication.DigitalRequest,
+      io.grpc.communication.DigitalReply> getSendMessageAgainMethod;
 
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static io.grpc.MethodDescriptor<io.grpc.communication.example.DigitalRequest,
-      io.grpc.communication.example.DigitalReply> getSendMessageAgainMethod() {
+  public static io.grpc.MethodDescriptor<io.grpc.communication.DigitalRequest,
+      io.grpc.communication.DigitalReply> getSendMessageAgainMethod() {
     return getSendMessageAgainMethodHelper();
   }
 
-  private static io.grpc.MethodDescriptor<io.grpc.communication.example.DigitalRequest,
-      io.grpc.communication.example.DigitalReply> getSendMessageAgainMethodHelper() {
-    io.grpc.MethodDescriptor<io.grpc.communication.example.DigitalRequest, io.grpc.communication.example.DigitalReply> getSendMessageAgainMethod;
+  private static io.grpc.MethodDescriptor<io.grpc.communication.DigitalRequest,
+      io.grpc.communication.DigitalReply> getSendMessageAgainMethodHelper() {
+    io.grpc.MethodDescriptor<io.grpc.communication.DigitalRequest, io.grpc.communication.DigitalReply> getSendMessageAgainMethod;
     if ((getSendMessageAgainMethod = CommunicatorGrpc.getSendMessageAgainMethod) == null) {
       synchronized (CommunicatorGrpc.class) {
         if ((getSendMessageAgainMethod = CommunicatorGrpc.getSendMessageAgainMethod) == null) {
           CommunicatorGrpc.getSendMessageAgainMethod = getSendMessageAgainMethod = 
-              io.grpc.MethodDescriptor.<io.grpc.communication.example.DigitalRequest, io.grpc.communication.example.DigitalReply>newBuilder()
+              io.grpc.MethodDescriptor.<io.grpc.communication.DigitalRequest, io.grpc.communication.DigitalReply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "communication.Communicator", "SendMessageAgain"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  io.grpc.communication.example.DigitalRequest.getDefaultInstance()))
+                  io.grpc.communication.DigitalRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  io.grpc.communication.example.DigitalReply.getDefaultInstance()))
+                  io.grpc.communication.DigitalReply.getDefaultInstance()))
                   .setSchemaDescriptor(new CommunicatorMethodDescriptorSupplier("SendMessageAgain"))
                   .build();
           }
@@ -140,8 +140,8 @@ public final class CommunicatorGrpc {
      * Sends a greeting
      * </pre>
      */
-    public void sendMessage(io.grpc.communication.example.DigitalRequest request,
-        io.grpc.stub.StreamObserver<io.grpc.communication.example.DigitalReply> responseObserver) {
+    public void sendMessage(io.grpc.communication.DigitalRequest request,
+        io.grpc.stub.StreamObserver<io.grpc.communication.DigitalReply> responseObserver) {
       asyncUnimplementedUnaryCall(getSendMessageMethodHelper(), responseObserver);
     }
 
@@ -150,8 +150,8 @@ public final class CommunicatorGrpc {
      * Sends another greeting
      * </pre>
      */
-    public void sendMessageAgain(io.grpc.communication.example.DigitalRequest request,
-        io.grpc.stub.StreamObserver<io.grpc.communication.example.DigitalReply> responseObserver) {
+    public void sendMessageAgain(io.grpc.communication.DigitalRequest request,
+        io.grpc.stub.StreamObserver<io.grpc.communication.DigitalReply> responseObserver) {
       asyncUnimplementedUnaryCall(getSendMessageAgainMethodHelper(), responseObserver);
     }
 
@@ -161,15 +161,15 @@ public final class CommunicatorGrpc {
             getSendMessageMethodHelper(),
             asyncUnaryCall(
               new MethodHandlers<
-                io.grpc.communication.example.DigitalRequest,
-                io.grpc.communication.example.DigitalReply>(
+                io.grpc.communication.DigitalRequest,
+                io.grpc.communication.DigitalReply>(
                   this, METHODID_SEND_MESSAGE)))
           .addMethod(
             getSendMessageAgainMethodHelper(),
             asyncUnaryCall(
               new MethodHandlers<
-                io.grpc.communication.example.DigitalRequest,
-                io.grpc.communication.example.DigitalReply>(
+                io.grpc.communication.DigitalRequest,
+                io.grpc.communication.DigitalReply>(
                   this, METHODID_SEND_MESSAGE_AGAIN)))
           .build();
     }
@@ -201,8 +201,8 @@ public final class CommunicatorGrpc {
      * Sends a greeting
      * </pre>
      */
-    public void sendMessage(io.grpc.communication.example.DigitalRequest request,
-        io.grpc.stub.StreamObserver<io.grpc.communication.example.DigitalReply> responseObserver) {
+    public void sendMessage(io.grpc.communication.DigitalRequest request,
+        io.grpc.stub.StreamObserver<io.grpc.communication.DigitalReply> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getSendMessageMethodHelper(), getCallOptions()), request, responseObserver);
     }
@@ -212,8 +212,8 @@ public final class CommunicatorGrpc {
      * Sends another greeting
      * </pre>
      */
-    public void sendMessageAgain(io.grpc.communication.example.DigitalRequest request,
-        io.grpc.stub.StreamObserver<io.grpc.communication.example.DigitalReply> responseObserver) {
+    public void sendMessageAgain(io.grpc.communication.DigitalRequest request,
+        io.grpc.stub.StreamObserver<io.grpc.communication.DigitalReply> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getSendMessageAgainMethodHelper(), getCallOptions()), request, responseObserver);
     }
@@ -245,7 +245,7 @@ public final class CommunicatorGrpc {
      * Sends a greeting
      * </pre>
      */
-    public io.grpc.communication.example.DigitalReply sendMessage(io.grpc.communication.example.DigitalRequest request) {
+    public io.grpc.communication.DigitalReply sendMessage(io.grpc.communication.DigitalRequest request) {
       return blockingUnaryCall(
           getChannel(), getSendMessageMethodHelper(), getCallOptions(), request);
     }
@@ -255,7 +255,7 @@ public final class CommunicatorGrpc {
      * Sends another greeting
      * </pre>
      */
-    public io.grpc.communication.example.DigitalReply sendMessageAgain(io.grpc.communication.example.DigitalRequest request) {
+    public io.grpc.communication.DigitalReply sendMessageAgain(io.grpc.communication.DigitalRequest request) {
       return blockingUnaryCall(
           getChannel(), getSendMessageAgainMethodHelper(), getCallOptions(), request);
     }
@@ -287,8 +287,8 @@ public final class CommunicatorGrpc {
      * Sends a greeting
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<io.grpc.communication.example.DigitalReply> sendMessage(
-        io.grpc.communication.example.DigitalRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<io.grpc.communication.DigitalReply> sendMessage(
+        io.grpc.communication.DigitalRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getSendMessageMethodHelper(), getCallOptions()), request);
     }
@@ -298,8 +298,8 @@ public final class CommunicatorGrpc {
      * Sends another greeting
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<io.grpc.communication.example.DigitalReply> sendMessageAgain(
-        io.grpc.communication.example.DigitalRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<io.grpc.communication.DigitalReply> sendMessageAgain(
+        io.grpc.communication.DigitalRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getSendMessageAgainMethodHelper(), getCallOptions()), request);
     }
@@ -326,12 +326,12 @@ public final class CommunicatorGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_SEND_MESSAGE:
-          serviceImpl.sendMessage((io.grpc.communication.example.DigitalRequest) request,
-              (io.grpc.stub.StreamObserver<io.grpc.communication.example.DigitalReply>) responseObserver);
+          serviceImpl.sendMessage((io.grpc.communication.DigitalRequest) request,
+              (io.grpc.stub.StreamObserver<io.grpc.communication.DigitalReply>) responseObserver);
           break;
         case METHODID_SEND_MESSAGE_AGAIN:
-          serviceImpl.sendMessageAgain((io.grpc.communication.example.DigitalRequest) request,
-              (io.grpc.stub.StreamObserver<io.grpc.communication.example.DigitalReply>) responseObserver);
+          serviceImpl.sendMessageAgain((io.grpc.communication.DigitalRequest) request,
+              (io.grpc.stub.StreamObserver<io.grpc.communication.DigitalReply>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -355,7 +355,7 @@ public final class CommunicatorGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return io.grpc.communication.example.CommunicationProto.getDescriptor();
+      return io.grpc.communication.CommunicationProto.getDescriptor();
     }
 
     @java.lang.Override

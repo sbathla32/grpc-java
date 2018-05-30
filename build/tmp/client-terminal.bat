@@ -66,7 +66,7 @@ set CMD_LINE_ARGS=%*
 set CLASSPATH=%APP_HOME%\lib\grpc-java-poc.jar;%APP_HOME%\lib\grpc-alts-1.12.0.jar;%APP_HOME%\lib\grpc-protobuf-1.12.0.jar;%APP_HOME%\lib\proto-google-common-protos-1.0.0.jar;%APP_HOME%\lib\grpc-netty-1.12.0.jar;%APP_HOME%\lib\grpc-stub-1.12.0.jar;%APP_HOME%\lib\protobuf-java-util-3.5.1.jar;%APP_HOME%\lib\protobuf-java-3.5.1.jar;%APP_HOME%\lib\grpc-protobuf-lite-1.12.0.jar;%APP_HOME%\lib\grpc-core-1.12.0.jar;%APP_HOME%\lib\commons-lang3-3.5.jar;%APP_HOME%\lib\netty-codec-http2-4.1.22.Final.jar;%APP_HOME%\lib\netty-handler-proxy-4.1.22.Final.jar;%APP_HOME%\lib\guava-20.0.jar;%APP_HOME%\lib\grpc-context-1.12.0.jar;%APP_HOME%\lib\gson-2.7.jar;%APP_HOME%\lib\error_prone_annotations-2.1.2.jar;%APP_HOME%\lib\jsr305-3.0.0.jar;%APP_HOME%\lib\opencensus-contrib-grpc-metrics-0.11.0.jar;%APP_HOME%\lib\opencensus-api-0.11.0.jar;%APP_HOME%\lib\netty-codec-http-4.1.22.Final.jar;%APP_HOME%\lib\netty-handler-4.1.22.Final.jar;%APP_HOME%\lib\netty-codec-socks-4.1.22.Final.jar;%APP_HOME%\lib\netty-codec-4.1.22.Final.jar;%APP_HOME%\lib\netty-transport-4.1.22.Final.jar;%APP_HOME%\lib\netty-buffer-4.1.22.Final.jar;%APP_HOME%\lib\netty-resolver-4.1.22.Final.jar;%APP_HOME%\lib\netty-common-4.1.22.Final.jar
 
 @rem Execute client-terminal
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %CLIENT_TERMINAL_OPTS%  -classpath "%CLASSPATH%" io.grpc.communication.example.ClientTerminal %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %CLIENT_TERMINAL_OPTS%  -classpath "%CLASSPATH%" io.grpc.communication.ClientTerminal %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell

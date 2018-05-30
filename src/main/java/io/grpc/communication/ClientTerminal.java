@@ -1,5 +1,5 @@
 
-package io.grpc.communication.example;
+package io.grpc.communication;
 
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
+
 
 /**
  * A simple client that requests a greeting from the {@link ServerTerminal}.

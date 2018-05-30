@@ -1,5 +1,5 @@
 
-package io.grpc.communication.example;
+package io.grpc.communication;
 
 import java.io.IOException;
 import java.util.logging.Logger;
